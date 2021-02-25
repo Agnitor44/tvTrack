@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+button {
+  background-color: grey;
+          border: none;
+        cursor: pointer;
+        
+}
+i {
+  transition: 0.4s;
+  color: rgb(211, 211, 211);
+}
+button:hover i 
+{
+
+    color: black;
+}
+

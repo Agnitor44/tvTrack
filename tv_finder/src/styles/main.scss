@@ -1,0 +1,176 @@
+.moviesContainer {
+   
+    max-width: 1300px;
+   
+    margin: 0 auto;
+    background-color: #1132;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 10vh;
+    .box {
+        display: flex;
+       height: 350px;
+      width: 250px;
+      position: relative;
+     
+        margin: 10px;
+        .hiddenZone {
+            overflow: hidden;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(48, 48, 48, 0.822);
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.2s;
+        z-index: 1;
+        transform: scaleX(0.2);
+        left: 0%;
+        &:hover {
+            transform:  scaleX(1);
+            left: 100%;
+            z-index: 99;
+         
+        }
+        div.buttonFlex {
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #1111;
+            align-items: center;
+            height: 40px;
+            h3 {
+                    
+            }
+            div.buttons {
+              display: flex;
+            align-items: center;
+              justify-content: flex-end;
+              width: 20%;
+              height: 100%;
+              
+                button {
+                    width: 100%;
+                    background-color: grey;
+                    border: none;
+                    cursor: pointer;
+                    margin-left: 5%;
+                    height: 100%;
+                    &:hover i{
+                        color: black;
+                    }
+                    i {
+                        transition: 0.4s;
+                        font-size: 24px;
+                        color: rgb(211, 211, 211);
+                    }
+                }
+            }
+           
+        }
+        article {
+            padding: 10px;
+            font-size: 20px;
+            background-color: #1111;
+            overflow: hidden;
+            height: 70%;
+           p {
+           
+           }
+        }
+        }
+        .shownZone {
+            overflow: hidden;
+           background-color: black;
+            z-index: 20;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &:hover ~ .hiddenZone  {
+                transform:  scaleX(1);
+                left: 100%;
+                z-index: 99;
+            }
+            .imgHere {
+                width: 95%;
+                height: 80%;
+               background-size: cover;
+               background-color: transparent;
+                margin: 0 auto;
+            }
+            h1 {
+                text-align: center;
+                background-color: black;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                font-size: 26px;
+                padding: 7%;
+            }
+        }
+      
+    }
+
+ 
+ 
+
+
+}
+div.checkInfo {
+ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    button {
+        margin-top: 1%;
+        font-size: 36px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: transparent;
+        color: white;
+        border: white 4px solid;
+    }
+    div.genres {
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        text-decoration: underline;
+        h1 {
+         
+        }
+    }
+ 
+}
+
+div.box:nth-child(4n) {
+
+    .hiddenZone {
+   position: absolute;   
+    left: -10%;
+    &:hover {
+        transform:  scaleX(1);
+        left: -150%;
+
+        z-index: 99;
+     
+    }
+}
+.shownZone {
+ 
+    &:hover ~ .hiddenZone  {
+        transform:  scaleX(1);
+        left: -150%;
+        z-index: 99;
+    }
+}
+}
+

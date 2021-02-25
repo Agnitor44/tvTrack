@@ -1,0 +1,221 @@
+.moviesContainer {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #1132;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  padding-bottom: 10vh;
+}
+
+.moviesContainer .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 350px;
+  width: 250px;
+  position: relative;
+  margin: 10px;
+}
+
+.moviesContainer .box .hiddenZone {
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(48, 48, 48, 0.822);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 380px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  z-index: 1;
+  -webkit-transform: scaleX(0.2);
+          transform: scaleX(0.2);
+  left: 0%;
+}
+
+.moviesContainer .box .hiddenZone:hover {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  left: 100%;
+  z-index: 99;
+}
+
+.moviesContainer .box .hiddenZone div.buttonFlex {
+  margin-left: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background-color: #1111;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+
+.moviesContainer .box .hiddenZone div.buttonFlex div.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 20%;
+  height: 100%;
+}
+
+.moviesContainer .box .hiddenZone div.buttonFlex div.buttons button {
+  width: 100%;
+  background-color: grey;
+  border: none;
+  cursor: pointer;
+  margin-left: 5%;
+  height: 100%;
+}
+
+.moviesContainer .box .hiddenZone div.buttonFlex div.buttons button:hover i {
+  color: black;
+}
+
+.moviesContainer .box .hiddenZone div.buttonFlex div.buttons button i {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 24px;
+  color: lightgray;
+}
+
+.moviesContainer .box .hiddenZone article {
+  padding: 10px;
+  font-size: 20px;
+  background-color: #1111;
+  overflow: hidden;
+  height: 70%;
+}
+
+.moviesContainer .box .shownZone {
+  overflow: hidden;
+  background-color: black;
+  z-index: 20;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.moviesContainer .box .shownZone:hover ~ .hiddenZone {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  left: 100%;
+  z-index: 99;
+}
+
+.moviesContainer .box .shownZone .imgHere {
+  width: 95%;
+  height: 80%;
+  background-size: cover;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.moviesContainer .box .shownZone h1 {
+  text-align: center;
+  background-color: black;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 26px;
+  padding: 7%;
+}
+
+div.checkInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.checkInfo button {
+  margin-top: 1%;
+  font-size: 36px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+  border: white 4px solid;
+}
+
+div.checkInfo div.genres {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-decoration: underline;
+}
+
+div.box:nth-child(4n) .hiddenZone {
+  position: absolute;
+  left: -10%;
+}
+
+div.box:nth-child(4n) .hiddenZone:hover {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  left: -150%;
+  z-index: 99;
+}
+
+div.box:nth-child(4n) .shownZone:hover ~ .hiddenZone {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  left: -150%;
+  z-index: 99;
+}
+/*# sourceMappingURL=main.css.map */

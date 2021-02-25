@@ -1,0 +1,139 @@
+div.modalBgc {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.774);
+  position: absolute;
+  z-index: 300;
+}
+
+div.modalBgc .modal {
+  position: relative;
+  margin: 5vh auto;
+  width: 800px;
+  background-color: #252525;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+}
+
+div.modalBgc .modal button.addsub {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  width: 40px;
+  height: 40px;
+}
+
+div.modalBgc .modal button.back {
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  font-size: 30px;
+}
+
+div.modalBgc .modal h1 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+div.modalBgc .modal .infoDetailed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.modalBgc .modal .infoDetailed .basicInfo {
+  padding-right: 2%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+div.modalBgc .modal .infoDetailed .basicInfo img {
+  height: 90%;
+  width: 100%;
+}
+
+div.modalBgc .modal .infoDetailed .basicInfo div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: underline;
+}
+
+div.modalBgc .modal .infoDetailed .otherInfo {
+  padding: 1% 0 1.3% 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.modalBgc .modal .infoDetailed .otherInfo article {
+  max-height: 300px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div.modalBgc .modal .infoDetailed .otherInfo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+div.modalBgc .modal .infoDetailed .otherInfo div span {
+  margin-right: 5%;
+}
+
+div.modalBgc .modal .infoDetailed .otherInfo div a {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  overflow: hidden;
+  color: #1c0730;
+}
+/*# sourceMappingURL=modal.css.map */

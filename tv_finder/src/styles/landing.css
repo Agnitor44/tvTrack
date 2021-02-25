@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #111111;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.container {
+  overflow: hidden;   
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  position: relative;
+}
+
+.container h1 {
+  font-size: 78px;
+  text-transform: uppercase;
+  z-index: 1000;
+}
+
+.container h4 {
+  font-size: 36px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  z-index: 1000;
+}
+
+.container .block {
+background-position: center;
+background-size: cover;
+  position: absolute;
+  width: 10%;
+  height: 20vh;
+  background-color: rgba(22, 22, 22, 0.685);
+ 
+  color: black;
+  -webkit-box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+div.wrapIm {
+position: absolute;
+    z-index: 100;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+button.startButton {
+  margin-top: 50px;
+  z-index: 1000;
+  width: 20%;
+  font-size: 40px;
+  background-color: transparent;
+  border: white 4px solid;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+button.startButton:hover {
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
+div.pick {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.pick h1 {
+font-size: 78px;
+}
+
+.pick h4 {
+  font-size: 30px;
+}
+div.ganresBox {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(53, 53, 53);
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+button.pickedButton {
+  display: block;
+  width: 20%;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  border: white 2px solid;
+ font-size: 26px;
+ 
+}
+button.subButton {
+  width: 30%;
+  font-size: 40px;
+  margin-top: 50px;
+  background-color: transparent;
+  color: white;
+  border: white 2px solid;
+}
+button.pickedButtonNow {
+  display: block;
+  width: 20%;
+  padding: 10px;
+  background-color: #111111;
+  color: white;
+  border: white 2px solid;
+ font-size: 26px;
+}
+
+/*# sourceMappingURL=style.css.map */
