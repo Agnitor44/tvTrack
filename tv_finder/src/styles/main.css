@@ -218,4 +218,22 @@ div.box:nth-child(4n) .shownZone:hover ~ .hiddenZone {
   left: -150%;
   z-index: 99;
 }
+div.box:nth-child(4n) .hiddenZone {
+  position: absolute;
+  left: -10%;
+}
+
+div.box:nth-child(4n) .hiddenZone:hover {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  left: -150%;
+  z-index: 99;
+}
+
+div.box:nth-child(4n) .shownZone:hover ~ .hiddenZone {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  left: -150%;
+  z-index: 99;
+}
 /*# sourceMappingURL=main.css.map */
