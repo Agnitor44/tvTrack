@@ -13,7 +13,7 @@ Now you can read about shows.
 
 ![alt text](https://cdn.discordapp.com/attachments/630797359252504643/814592111730884638/unknown.png)
 
-Try to add something to your watching qwe. 
+Try to add something to your watching que. 
 
 ![alt text](https://cdn.discordapp.com/attachments/630797359252504643/814592334402289715/unknown.png)
 
