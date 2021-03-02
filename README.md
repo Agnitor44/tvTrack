@@ -24,7 +24,7 @@ From the que you can see detailed information about show you have.
 
 
 Everything is saved on a local storage (using StickyState) so do not worry about your list disappearing.
-I'm open top hear some suggestions about the app.
+I'm open to hear some suggestions about the app.
 
 You can test app here => https://60397f29d682050ad488836e--showfinder.netlify.app/
 
